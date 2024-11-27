@@ -1,0 +1,216 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Title and Input section */
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Input for adding task */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.6);
+  }
+  
+  /* Add Task button */
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Button Colors */
+  button.bg-blue-500 {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  button.bg-blue-500:hover {
+    background-color: #2980b9;
+  }
+  
+  button.bg-green-500 {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  button.bg-green-500:hover {
+    background-color: #27ae60;
+  }
+  
+  button.bg-yellow-500 {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  button.bg-yellow-500:hover {
+    background-color: #e67e22;
+  }
+  
+  button.bg-red-500 {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #c0392b;
+  }
+  
+  button.bg-indigo-500 {
+    background-color: #5f27cd;
+    color: white;
+  }
+  
+  button.bg-indigo-500:hover {
+    background-color: #341f97;
+  }
+  
+  /* Task list styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  
+  li span {
+    flex-grow: 2;
+    color: #333;
+  }
+  
+  li.completed {
+    background-color: #eafaf1;
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* Edit Task input */
+  input[type="text"].editing {
+    background-color: #f3f3f3;
+    border-color: #bbb;
+  }
+  
+  /* Task List Header */
+  h3.text-xl {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Animations and Transitions */
+  button, input[type="text"], li {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focused input button */
+  input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.6);
+  }
+  
+  /* Additional Custom Styles for Buttons within List */
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Styling for Edit and Done buttons */
+  button.bg-green-500 {
+    background-color: #2ecc71;
+  }
+  
+  button.bg-green-500:hover {
+    background-color: #27ae60;
+  }
+  
+  button.bg-red-500 {
+    background-color: #e74c3c;
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #c0392b;
+  }
+  
+  button.bg-indigo-500 {
+    background-color: #5f27cd;
+  }
+  
+  button.bg-indigo-500:hover {
+    background-color: #341f97;
+  }
+  
+  /* Align elements inside task container */
+  div.ml-4 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  div.flex.items-center {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  div.space-x-2 {
+    display: flex;
+    gap: 12px;
+  }
+  
